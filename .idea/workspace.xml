@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b19c3147-c707-4e35-bd19-e92a0019c2ae" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/aes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file_operations.py" beforeDir="false" afterPath="$PROJECT_DIR$/file_operations.py" afterDir="false" />
+    <list default="true" id="b19c3147-c707-4e35-bd19-e92a0019c2ae" name="Changes" comment="Start AES">
+      <change afterPath="$PROJECT_DIR$/aes_encryption.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unitTests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aes.py" beforeDir="false" afterPath="$PROJECT_DIR$/aes.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,10 +48,27 @@
       <updated>1685014366598</updated>
       <workItem from="1685014368931" duration="1198000" />
       <workItem from="1685107848132" duration="3687000" />
+      <workItem from="1685190267431" duration="60000" />
+      <workItem from="1685439643959" duration="4588000" />
     </task>
+    <task id="LOCAL-00001" summary="Start AES">
+      <created>1685190318202</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1685190318202</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Start AES" />
+    <option name="LAST_COMMIT_MESSAGE" value="Start AES" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/TestCryptography$unitTests.coverage" NAME="unitTests Coverage Results" MODIFIED="1685447993472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

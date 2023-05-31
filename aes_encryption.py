@@ -16,13 +16,13 @@ def adaptBlockSizeOfInputText(inputText) -> string:
 
 def encryptAES(textToEncrypt, key) -> string:
 
-    aesCipher = Cipher(algorithms.AES(key), modes.ECB(), backend=default_backend())
+    aesCipher = Cipher(algorithms.AES(key.encode()), modes.ECB(), backend=default_backend())
     aesEncryptor = aesCipher.encryptor()
-    return aesEncryptor.update(adaptBlockSizeOfInputText(textToEncrypt))
+    return aesEncryptor.update(adaptBlockSizeOfInputText(textToEncrypt).encode())
 
 
 def decyrptAES(textToDecrypt, key) -> string:
 
-    aesCipher = Cipher(algorithms.AES(key), modes.ECB(), backend=default_backend())
+    aesCipher = Cipher(algorithms.AES(key.encode()), modes.ECB(), backend=default_backend())
     aesDecryptor = aesCipher.decryptor()
-    return aesDecryptor.update(textToDecrypt)
+    return aesDecryptor.update(textToDecrypt.encode())

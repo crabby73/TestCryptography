@@ -21,8 +21,8 @@ def encryptAES(textToEncrypt, key) -> string:
     return aesEncryptor.update(adaptBlockSizeOfInputText(textToEncrypt).encode())
 
 
-def decyrptAES(textToDecrypt, key) -> string:
+def decyrptAES(textToDecrypt, key) -> bytes:
 
     aesCipher = Cipher(algorithms.AES(key.encode()), modes.ECB(), backend=default_backend())
     aesDecryptor = aesCipher.decryptor()
-    return aesDecryptor.update(textToDecrypt.encode())
+    return aesDecryptor.update(textToDecrypt)

@@ -12,5 +12,9 @@ assert outputText == resultText
 textToEncrypt = 'test'
 key = '0123456789ABCDEF'
 encryptedText = encryptAES(textToEncrypt, key)
+print(type(encryptedText))
 print(encryptedText)
 
+textToDecrypt = encryptedText
+decryptedText = decyrptAES(textToDecrypt, key)
+print(decryptedText)

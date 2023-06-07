@@ -9,6 +9,7 @@ resultText = testText + 'X'
 outputText = adaptBlockSizeOfInputText(testText)
 assert outputText == resultText
 
+# Test encryption including decryption
 textToEncrypt = 'test'
 key = '0123456789ABCDEF'
 encryptedText = encryptAES(textToEncrypt, key)
@@ -17,4 +18,6 @@ print(encryptedText)
 
 textToDecrypt = encryptedText
 decryptedText = decyrptAES(textToDecrypt, key)
+print(type(decryptedText))
 print(decryptedText)
+#assert textToEncrypt == decryptedText
